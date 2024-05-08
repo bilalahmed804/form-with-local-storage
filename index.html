@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="w-50 form-wrapper">
+        <h1 class="form-title">Registration Form</h1>
+        <form onsubmit="return validation()">
+          <div class="form-group m-5">
+            <label>Username<b>: </b><b class="main"> *</b></label>
+            <input
+              type="text"
+              placeholder="Username"
+              id="username"
+              class="form-control form-input"
+            />
+            <span
+              id="usernameError"
+              class="text-danger fw-bold error-message"
+            ></span>
+          </div>
+
+          <div class="form-group m-5">
+            <label>Email<b>: </b><b class="main"> *</b></label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Email"
+              class="form-control form-input"
+            />
+            <span
+              id="emailError"
+              class="text-danger fw-bold error-message"
+            ></span>
+          </div>
+
+          <div class="form-group m-5">
+            <label>Password<b>: </b><b class="main"> *</b></label>
+            <input
+              type="password"
+              placeholder="password"
+              id="password"
+              class="form-control form-input"
+            />
+            <span
+              id="passwordError"
+              class="text-danger fw-bold error-message"
+            ></span>
+<span id="hiddenIcon" onclick="changeIcon()">🔒</span>
+
+          </div>
+
+          <div class="form-group m-5">
+            <label>Mobile No<b>: </b><b class="main"> *</b></label>
+            <input
+              type="text"
+              placeholder="Mobile Number"
+              id="mobileNumber"
+              class="form-control form-input"
+            />
+            <span
+              id="mobileError"
+              class="text-danger fw-bold error-message"
+            ></span>
+          </div>
+
+          <button class="form-button">submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="JS/app1.js"></script>
+  </body>
+</html>
